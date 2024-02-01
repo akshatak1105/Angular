@@ -1,0 +1,19 @@
+<div class="m-5 p-5 border border-2 border-success">
+    <form (submit)="onSubmit()">
+      <div class="mb-3">
+        <label for="connectionString" class="form-label">Database Connection</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Please provide in format: jdbc:mysql://127.1.0.1:8898/dbname?username=abc&password=xyz"
+          id="connectionString"
+          [(ngModel)]="query"
+          name="connectionString"
+          required
+        />
+      </div>
+     
+      <button type="submit" class="btn btn-success">Connect</button>
+    </form>
+  </div>
+  
